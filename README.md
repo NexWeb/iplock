@@ -9,8 +9,8 @@ iplock
 
 The `iplock` command line is an `iptable` firewall IP address blocker.
 
-We use it with Snap! to block unwanted users either through tools
-such as `fail2ban` or from within our `libsnapwebsites` library.
+Can be used to block bots, securtity risks and other unwanted users through tools
+such as `fail2ban`.
 
 The library comes with setup files which control how we add and remove
 IP addresses to the firewall. There are several methods depending on
@@ -32,12 +32,7 @@ you can reset it by running the default firewall script:
 
     sudo /etc/network/firewall
 
-This command resets the firewall as it looks like after a reboot on
-a Snap! system.
-
-Note that when `snapfirewall` starts, it adds the IP addresses using
-the `iplock` tool first, then allows the Snap! Server to accept client's
-connections.
+This command resets the firewall as it looks like after a reboot.
 
 
 Bugs
